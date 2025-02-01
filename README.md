@@ -1,2 +1,3 @@
-# cipher_aegis
-A simple keywords generator that saves them in a file in your computer
+# Cipher Aegis: Your Ultimate Guardian!
+### A simple keywords generator that saves them in a file in your computer.
+In progress...
