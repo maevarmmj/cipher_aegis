@@ -1,3 +1,3 @@
 # Cipher Aegis: Your Ultimate Guardian!
-### A simple keywords generator that saves them in a file in your computer.
+### A simple password generator that saves them in a file in your computer.
 In progress...
