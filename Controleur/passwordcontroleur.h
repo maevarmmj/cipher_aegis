@@ -12,14 +12,13 @@ enum class GenerateResult{
     MissingInfo,
 };
 
-class KeywordControleur
+class PasswordControleur
 {
 
 private:
-    std::string keyword;
+    std::string password;
 public:
-    KeywordControleur();
-    ~KeywordControleur();
+    PasswordControleur();
 
     std::string insert_into_string(std::string string, int position, char char_to_insert); // Insert a character in the existing string
     std::string lower_case(std::string keyword, int num_char, int num_upper_letters, int num_spec_char);
@@ -28,7 +27,7 @@ public:
     std::string spec_characters(std::string keyword, int num_spec_char, const std::string& spec_chars);
     GenerateResult generatePassword(int num_char, int num_number, int num_spec_char, const std::string& spec_chars);
 
-    std::string getKeyword();
+    std::string getPassword();
 };
 
 #endif // KEYWORDCONTROLEUR_H

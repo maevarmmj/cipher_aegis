@@ -7,11 +7,11 @@ QT += core widgets
 QT += sql
 
 SOURCES += \
-        Controleur/keywordcontroleur.cpp \
+        Controleur/passwordcontroleur.cpp \
         Vue/mainwindow.cpp \
         main.cpp
 
 HEADERS += \
-    Controleur/keywordcontroleur.h \
+    Controleur/passwordcontroleur.h \
     Vue/mainwindow.h \
     main.h

@@ -3,7 +3,7 @@
 
 #include <QApplication>
 
-#include "Controleur/keywordcontroleur.h"
+#include "Controleur/passwordcontroleur.h"
 #include "Vue/mainwindow.h"
 
 #endif // MAIN_H
