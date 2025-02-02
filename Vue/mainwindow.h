@@ -11,6 +11,10 @@
 #include <QHBoxLayout>
 #include <QDir>
 #include <QButtonGroup>
+#include <QMessageBox>
+#include <QComboBox>
+
+#include "Controleur/passwordcontroleur.h"
 
 
 class MainWindow : public QMainWindow {
@@ -24,6 +28,10 @@ private:
     QLabel *numberOfNumbers;
     QLabel *specialCharQuestion;
     QLabel *numberOfSpecialChar;
+    QLabel *description;
+    QLabel *labelSpecChar;
+
+    QComboBox *specCharComboBox;
 
     QLineEdit *siteNameLineEdit;
 
@@ -35,10 +43,13 @@ private:
     QCheckBox *no;
 
     QPushButton *generateButton;
+    QPushButton *generateButton2;
+    QPushButton *enterButton;
 
     QWidget *centralWidget;
 
     QVBoxLayout *mainLayout;
+    QVBoxLayout *specialCharsSelectionLayout;
 
     QHBoxLayout *siteNameLayout;
     QHBoxLayout *numberOfCharLayout;
@@ -48,6 +59,12 @@ private:
     QHBoxLayout *bottomButtonsLayout;
     QHBoxLayout *topBarLayout;
 
+    QList<QComboBox *> specCharComboBoxes;
+
+
+private slots:
+    void onClickedGenerate();
+    void onClickedEnter();
 
 public:
     MainWindow();
@@ -55,6 +72,7 @@ public:
     void setUpUI();
     void handleYesCheckBox(int state);
     void handleNoCheckBox(int state);
+    void clearData();
 };
 
 #endif // MAINWINDOW_H

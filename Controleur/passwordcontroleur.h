@@ -5,6 +5,10 @@
 #include <string>
 #include <random>
 #include <algorithm>
+#include <fstream>
+#include <QDir>
+#include <filesystem>
+
 
 enum class GenerateResult{
     Success,
@@ -24,8 +28,8 @@ public:
     std::string lower_case(std::string keyword, int num_char, int num_upper_letters, int num_spec_char);
     std::string add_numbers(std::string keyword, int num_number);
     std::string upper_case(std::string keyword, int num_upper_letters);
-    std::string spec_characters(std::string keyword, int num_spec_char, const std::string& spec_chars);
-    GenerateResult generatePassword(int num_char, int num_number, int num_spec_char, const std::string& spec_chars);
+    std::string spec_characters(std::string keyword, int num_spec_char, const std::vector<std::string>& spec_chars_list);
+    GenerateResult generatePassword(std::string site_name, int num_char, int num_number, int num_spec_char, const std::vector<std::string>& spec_chars_list);
 
     std::string getPassword();
 };
